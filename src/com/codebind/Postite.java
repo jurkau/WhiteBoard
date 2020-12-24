@@ -1,15 +1,7 @@
 package com.codebind;
-import javafx.scene.layout.Background;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
-
-import static com.sun.glass.ui.Cursor.setVisible;
 
 public class Postite extends JFrame{
 

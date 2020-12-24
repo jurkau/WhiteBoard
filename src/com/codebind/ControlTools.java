@@ -1,9 +1,9 @@
 package com.codebind;
-import javafx.geometry.Pos;
 
 import javax.swing.*;
-import java.awt.Color;
-import java.awt.event.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ControlTools implements ActionListener {
 
@@ -61,6 +61,12 @@ public class ControlTools implements ActionListener {
         if(actionEvent.getSource() == fen.btnColorBlack)
         {
             whiteBoard.setCouleurPinceau(Color.BLACK);
+        }
+
+
+        if(actionEvent.getSource() == fen.btnGomme)
+        {
+            whiteBoard.setCouleurPinceau(Color.WHITE);
         }
 
     }

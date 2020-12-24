@@ -101,7 +101,8 @@ public class Fenetre extends JFrame {
         btnPen = new JButton("Crayon");
         btnText = new JButton("Zone de texte");
         btnPostite = new JButton("Postite");
-        btnGomme = new JButton();
+        btnGomme = new JButton("Gomme", new ImageIcon("gomme.jpg"));
+
         btnColorBlack = new JButton();
         btnColorRed = new JButton();
         btnColorBlue = new JButton();
@@ -202,6 +203,7 @@ public class Fenetre extends JFrame {
         //création du panel général avec alignement verticale des éléments
         pano = new JPanel();
         pano.setLayout(new BoxLayout(pano, BoxLayout.Y_AXIS));
+        pano.setBackground(Color.WHITE);
 
         //création du panel pour les boutons avec alignement horizontal des éléments
         JPanel panButTab = new JPanel();
@@ -226,7 +228,7 @@ public class Fenetre extends JFrame {
         // ajout du paneau Boite a outils
         panToolBox = new JPanel();
         panToolBox.setLayout(new BoxLayout(panToolBox, BoxLayout.Y_AXIS));
-        panToolBox.setBackground(Color.WHITE);
+        panToolBox.setBackground(Color.lightGray);
 
         panToolBox.add(btnPen);
         panToolBox.add(btnText);
