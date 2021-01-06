@@ -37,10 +37,6 @@ public class ControlTools implements ActionListener {
             fen.tableauCourant.add(paneText);
         }
 
-        if(actionEvent.getSource() == fen.btnPostite)
-        {
-            Postite postite = new Postite();
-        }
 
         if(actionEvent.getSource() == fen.btnColorBlue)
         {

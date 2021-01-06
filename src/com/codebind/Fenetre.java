@@ -100,7 +100,6 @@ public class Fenetre extends JFrame {
         // Initiallisation Boite a outil
         btnPen = new JButton("Crayon");
         btnText = new JButton("Zone de texte");
-        btnPostite = new JButton("Postite");
         btnGomme = new JButton("Gomme", new ImageIcon("gomme.jpg"));
 
         btnColorBlack = new JButton();
@@ -181,7 +180,6 @@ public class Fenetre extends JFrame {
 
         btnPen.addActionListener(controlTools);
         btnText.addActionListener(controlTools);
-        btnPostite.addActionListener(controlTools);
         btnGomme.addActionListener(controlTools);
 
         btnColorBlack.addActionListener(controlTools);
@@ -233,7 +231,6 @@ public class Fenetre extends JFrame {
         panToolBox.add(btnPen);
         panToolBox.add(btnText);
         panToolBox.add(btnGomme);
-        panToolBox.add(btnPostite);
         panToolBox.add(btnColorBlack);
         panToolBox.add(btnColorRed);
         panToolBox.add(btnColorBlue);

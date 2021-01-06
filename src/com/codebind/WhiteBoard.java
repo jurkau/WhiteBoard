@@ -10,7 +10,6 @@ public class WhiteBoard extends JPanel implements MouseListener, MouseMotionList
     private Point curr = null;
     private Point prev = null;
     private Color couleurPinceau;
-    private Postite postite;
 
     //Permet d'identifier le tableau pour faciliter le traitement pour l'action du bouton clear
     public int id;
@@ -26,7 +25,6 @@ public class WhiteBoard extends JPanel implements MouseListener, MouseMotionList
         setOpaque(false);
         this.id = id;
         this.couleurPinceau = Color.BLACK;
-        this.postite = new Postite();
     }
 
     public void clear() {
@@ -54,8 +52,6 @@ public class WhiteBoard extends JPanel implements MouseListener, MouseMotionList
     {
         this.couleurPinceau = couleurCourante;
     }
-
-    public Postite getPostite(){ return postite; }
 
     @Override
     public void mouseMoved(final MouseEvent e) { }
